@@ -6,6 +6,7 @@ const router = require("../routes/user.routes")
 
 
 app.use(morgan('dev'));
+app.use(express.json());
 
 app.use("/", router)
 
